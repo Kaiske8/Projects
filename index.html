@@ -1,0 +1,85 @@
+g<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Kaiske's Fun Place</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
+<body>
+
+	<nav class="navbar">
+		<div class="logo">
+			<a href="#">Chainsaw man page</a>
+		</div>
+		<div class="search-bar">
+			<input type="text" placeholder="Search...">
+			<button type="submit">Search</button>
+		</div>
+		<ul>
+			<li> <a href="#" class="active">Home</a></li>
+			<li> <a href="#Reze">Reze</a></li>
+			<li> <a href="#Denji">Denji</a></li>
+		</ul>
+		
+		</div>
+	</nav>
+	<header>
+		<h1 class="site-title">Kaiske's Chainsaw Man site</h1>
+	</header>
+
+	<button id="themeToggle">Dark mode</button>
+
+	<section id="Reze">
+		<h2 class="reze-title">Reze Page</h2>
+		<p title="Reze fan"><a href="https://chainsaw-man.fandom.com/wiki/Reze">Visit Chainsaw man wiki for more info on Reze</a></p>
+		<p title="chainsaw man is peak">This is Reze.</p>
+		<p>I love doing coding</p>
+		<img src="https://external-preview.redd.it/chainsaw-man-the-movie-reze-arc-teaser-visual-v0-NH57Dh7_6Z46hF7DYGNrwVZ0vugRlcYRTE-I0EdpJvI.jpg?width=640&crop=smart&auto=webp&s=00f592b47db0d50e16206194b3bf22947c9fd274" alt="img_reze.jpeg" loading="lazy" width="300" height="230">
+
+		<img src="Reze_Coffee.jpeg" alt="img_reze_embedded" loading="lazy" width="250" height="250">
+		<img src="img_reze.jpeg" alt="img_reze.jpeg" loading="lazy" width="265" height="300">
+
+		<p class="reze-love">I love Reze.</p>
+
+		<pre>
+			<p class="magic-box">she is an antagonist</p>
+			<p><sup>is the bomb devil</sup></p>
+			<p><b>had a similar childhood to denji </b></p>
+			<p><sub>I miss her...</sub></p>
+		</pre>
+	</section>
+
+	<hr>
+
+	<section id="Denji">
+		<h3 class="denji-title">Denji page</h3>
+		<p><a href="https://chainsaw-man.fandom.com/wiki/Denji">Visit Chainsaw man wiki for more info on Denji</a></p>
+
+		<pre>
+			<p class="monospace"><strong>Denji is the protagonist of the show</strong></p>
+		<p class="red">All he wants is love</p>
+		<p class="center">He's been abused all his life</p>
+		<p>A lot of people think Denji is a <del>Gooner</del> but he isn't he's just <mark>broken</mark>.</p>
+		<p class="orange">Has a devil named pochita as his heart and also best friend</p>
+		</pre>
+		<img src="denji_young.jpeg" alt="Denji young" loading="lazy" width="300" height="260">
+		<img src="Denji.jpeg" alt="Denji" loading="lazy" width="300" height="240">
+		<img src="Chainsaw_man.jpeg" alt="Chainsaw man" loading="lazy" width="300" height="250">
+		</section>
+	<script>
+  const btn = document.getElementById('themeToggle');
+  const saved = localStorage.getItem('theme');
+  if (saved === 'dark') {
+    document.body.classList.add('dark');
+    btn.textContent = 'Light mode';
+  }
+
+  btn.addEventListener('click', () => {
+    const dark = document.body.classList.toggle('dark');
+    btn.textContent = dark ? 'Light mode' : 'Dark mode';
+    localStorage.setItem('theme', dark ? 'dark' : 'light');
+  });
+	</script>
+</body>
+</html>
